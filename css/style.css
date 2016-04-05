@@ -40,6 +40,7 @@ section {
 header {
 	position: fixed;
 	width: 100%;
+        z-index:9999999;
 }
 
 header nav, footer {
@@ -64,25 +65,23 @@ header nav a {
 	transition: all 300ms ease-out;
 }
  
-.navTopo a {
-	color: #FFFFFF;
+.navbar-default{ 
+	background: #FE8D27 !important;
+	text-align: center !important;
+	z-index: 9999999 !important;
+	-webkit-box-shadow: 0 1px 10px 4px #ED7C14 !important;
+	box-shadow: 0 1px 10px 4px #ED7C14 !important;
+        text-decoration: none !important;
+        border: 0px !important;
+        
+}
+.navbar-default a {
+	color: #FFFFFF !important;
+        text-decoration: none !important;
 }
 
-.navTopo a:hover {
-	color:#015ED7;
-}
-
-.navTopo { 
-	background-color: #FE8D27;
-	text-align: center;
-	z-index: 100;
-	-webkit-box-shadow: 0 1px 10px 4px #ED7C14;
-	box-shadow: 0 1px 10px 4px #ED7C14;
-}
- 
-.navForaTopo a {
-	color: #ffffff;	
-	background-color: #FE8D27;
+.navbar-default a:hover {
+	color: #015ED7 !important;
 }
 
 footer {
@@ -326,9 +325,11 @@ footer a:hover {
 
 .profile-img {
   width: 80%;
+  z-index:-1 !important;
 }
 .profile-img-small {
   width: 50%;
+  z-index:-1 !important;
 }
 .m-t-sm {
   margin-top: 10px;
@@ -357,4 +358,8 @@ footer a:hover {
 .apoio-logo:last-child {
     margin-left: 10%;
     max-width: 30% !important;
+}
+
+.gray-section{
+    z-index:-1 !important;
 }
